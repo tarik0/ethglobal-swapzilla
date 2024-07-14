@@ -1,0 +1,235 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "ISettlementContract",
+  "sourceName": "contracts/interfaces/IERC7683.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "settlementContract",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "swapper",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "nonce",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint32",
+              "name": "originChainId",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "initiateDeadline",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "fillDeadline",
+              "type": "uint32"
+            },
+            {
+              "internalType": "bytes",
+              "name": "orderData",
+              "type": "bytes"
+            }
+          ],
+          "internalType": "struct CrossChainOrder",
+          "name": "order",
+          "type": "tuple"
+        },
+        {
+          "internalType": "bytes",
+          "name": "signature",
+          "type": "bytes"
+        },
+        {
+          "internalType": "bytes",
+          "name": "fillerData",
+          "type": "bytes"
+        }
+      ],
+      "name": "initiate",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "settlementContract",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "swapper",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "nonce",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint32",
+              "name": "originChainId",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "initiateDeadline",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "fillDeadline",
+              "type": "uint32"
+            },
+            {
+              "internalType": "bytes",
+              "name": "orderData",
+              "type": "bytes"
+            }
+          ],
+          "internalType": "struct CrossChainOrder",
+          "name": "order",
+          "type": "tuple"
+        },
+        {
+          "internalType": "bytes",
+          "name": "fillerData",
+          "type": "bytes"
+        }
+      ],
+      "name": "resolve",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "settlementContract",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "swapper",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "nonce",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint32",
+              "name": "originChainId",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "initiateDeadline",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "fillDeadline",
+              "type": "uint32"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "token",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "amount",
+                  "type": "uint256"
+                }
+              ],
+              "internalType": "struct Input[]",
+              "name": "swapperInputs",
+              "type": "tuple[]"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "token",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "amount",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "address",
+                  "name": "recipient",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "chainId",
+                  "type": "uint32"
+                }
+              ],
+              "internalType": "struct Output[]",
+              "name": "swapperOutputs",
+              "type": "tuple[]"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "token",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "amount",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "address",
+                  "name": "recipient",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "chainId",
+                  "type": "uint32"
+                }
+              ],
+              "internalType": "struct Output[]",
+              "name": "fillerOutputs",
+              "type": "tuple[]"
+            }
+          ],
+          "internalType": "struct ResolvedCrossChainOrder",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
